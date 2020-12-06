@@ -61,7 +61,7 @@ public void doPost(HttpServletRequest request, HttpServletResponse response) thr
 		pw.println("<a href=takeappointment.html>Take Appointment </a></center><br><br>");
 		pw.println("<center><table border=1 width=20% height=20%><tr><td>Id No.</td><td>Name</td><td>Email</td><td>Phone</td><td>Specialisation</td></tr>");
 		
-		while(rs.next()) {
+		if(rs.next()) {
 			
 		pw.println("<tr><td>" + rs.getInt(1) + "</td><td>" + rs.getString(2) + "</td><td>" + rs.getString(3) + "</td><td>" + rs.getInt(4) + "</td><td>" + rs.getString(5) + "</td></tr>");
 		
