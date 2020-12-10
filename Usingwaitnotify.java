@@ -32,19 +32,19 @@ class Usingwaitnotify
 {  
 public static void main(String args[])
 {  
- Customer Durga=new Customer();  
+ Customer ajay=new Customer();  
 new Thread()
 {  
 public void run()
 {
-	Durga.withdraw(15000);
+	ajay.withdraw(15000);
 	}  
 }.start();  
 new Thread()
 {  
 public void run()
 {
-	Durga.deposit(10000);
+	ajay.deposit(10000);
 }  
 }.start();  
   
