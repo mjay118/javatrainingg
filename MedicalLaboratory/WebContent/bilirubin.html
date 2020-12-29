@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Bilirubin Report</title>
+</head>
+<body bgcolor="SteelBlue";>
+<center>
+<h1 style="color:white;"><i>Bilirubin Report</i></h1>
+<img alt="Bilirubin" src="image/liver.png"width="20%" height="20%">
+<form action="./bilirubin_report" method="post">
+<label  style="color:white;"><i>Enter Serum Bilirubin (Total):</i></label>
+<input type="number" name="serum_bilirubin" placeholder="(in mg/dl)"><br><br>
+
+<label  style="color:white;"><i>Enter Direct Bilirubin (Total):</i></label>
+<input type="number" name="direct_bilirubin" placeholder="(in mg/dl)"><br><br>
+
+<label  style="color:white;"><i>Enter Report Details:</i></label><br>
+<textarea  name="report" rows="10" cols="50" placeholder="Enter the Findings.">
+</textarea><br><br>
+<input style="color:green;"type="submit" value="Submit">
+</form>
+</center>
+</body>
+</html>

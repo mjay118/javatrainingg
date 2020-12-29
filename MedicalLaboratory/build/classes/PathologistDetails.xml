@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+<class name="com.pojo.Pathologist" table="pathology">
+<id name="lab_doctor_id" column="lab_doctor_id"></id>
+<property name="doctor_name" column="name"></property>
+<property name="gender" column="gender"></property>
+<property name="doctor_email" column="email"></property>
+<property name="doctor_password" column="password"></property>
+<property name="doctor_phone" column="phone"></property>
+<property name="doctor_specialisation" column="specialisation"></property>
+<property name="doctor_experience" column="experience"></property>
+<property name="doctor_address" column="address"></property>
+</class>
+</hibernate-mapping>

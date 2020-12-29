@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Test Registration </title>
+</head>
+<body bgcolor="SteelBlue";>
+<center>
+<h1 style="color:white;"><i>Test Registration</i></h1>
+<img alt="Test" src="image/doctor3.png"width="20%" height="20%">
+<form action="./test_reg" method="post">
+<label  style="color:white;"><i>Enter Name:</i></label>
+<input type="text" name="pname" placeholder="Enter Name"><br><br>
+<label  style="color:white;"><i>Enter Your Gender:</i></label>
+<input type="radio"  name="pgender" value="male">
+<label>Male</label>
+<input type="radio" id="female" name="pgender" value="female">
+<label>Female</label><br><br>
+<label  style="color:white;"><i>Enter Email Id:</i></label>
+<input type="email" name="pemail" placeholder="Enter Email"><br><br>
+<label  style="color:white;"><i>Enter Phone No.:</i></label>
+<input type="number" name="phone" placeholder="Enter Number"><br><br>
+<label  style="color:white;"><i>Enter Age:</i></label>
+<input type="number" name="age" placeholder="Enter Age"><br><br>
+<label  style="color:white;" for="blood_group">Select Blood Group:</label>
+<select name="blood_group">
+
+<option value="O+">O+</option>
+<option value="O-">O-</option>
+<option value="A+">A+</option>
+<option value="A-">A-</option>
+<option value="B+">B+</option>
+<option value="B-">B-</option>
+<option value="AB+">AB+</option>
+<option value="AB-">AB-</option>
+
+
+</select><br><br>
+<label  style="color:white;"><i>Select Test:</i></label>
+<select name="test_name" ><br><br>
+<option value="BLOOD TEST">BLOOD TEST</option>
+<option value="URINE TEST">URINE TEST</option>
+</select><br><br>
+
+<label  style="color:white;"><i>Enter Doctor Name who referred:</i></label>
+<input type="text" name="referred_by_doc" placeholder="Enter referred doc name"><br><br>
+
+<label  style="color:white;"><i>Enter Hospital Name who referred:</i></label>
+<input type="text" name="referred_by_hospital" placeholder="Enter referred hospital name"><br><br>
+
+<label  style="color:white;"><i>Enter Date & Time:</i></label>
+<input type="datetime-local" name="date_and_time" ><br><br>
+
+<input style="color:green;"type="submit" value="Register">
+</form>
+</center>
+</body>
+</html>

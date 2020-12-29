@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+<class name="com.pojo.UrineTest" table="urine_test">
+<id name="u_id" column="u_id"></id>
+<property name="pname" column="pname"></property>
+<property name="pgender" column="pgender"></property>
+<property name="pemail" column="pemail"></property>
+<property name="phone" column="phone"></property>
+<property name="age" column="age"></property>
+<property name="blood_group" column="blood_group"></property>
+<property name="test_name" column="test_name"></property>
+<property name="referred_by_doc" column="referred_by_doc"></property>
+<property name="referred_by_hospital" column="referred_by_hospital"></property>
+<property name="date_and_time" column="date_and_time"></property>
+<property name="color" column="color"></property>
+<property name="clarity" column="clarity"></property>
+<property name="pH" column="pH"></property>
+<property name="specific_gravity" column="specific_gravity"></property>
+<property name="glucose" column="glucose"></property>
+<property name="report_details" column="report_details"></property>
+<property name="test_status" column="test_status"></property>
+<property name="pathologist_name" column="pathologist_name"></property>
+<property name="pid" column="pid"></property>
+<property name="lab_doc_id" column="lab_doc_id"></property>
+
+</class>
+</hibernate-mapping>
