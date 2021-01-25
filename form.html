@@ -13,8 +13,6 @@ h1 {
 input{
     padding-top: 0.9%;
     padding-bottom: 0.9%;
-    
-    
 }
 #add{
     padding-top: 1%;
@@ -41,6 +39,9 @@ button{
     font-weight: 900;
     padding: 1%;
 }
+    #x{
+    margin-left: 16%;
+}
 
 </style>
 </head>
@@ -64,7 +65,9 @@ button{
         <label>Confirm Password</label><br><br>
         <input type="password" placeholder="Confirm your Password"/><br><br>
         <label>Address</label><br><br>
-        <textarea id="add" placeholder="Enter your Address"></textarea>
+        <textarea id="add" placeholder="Enter your Address"></textarea><br><br>
+        <label>Upload Profile Pic</label><br><br>
+        <input type="file" accept="image/*" id="x"/>
         <br><br><br>
         <button>Sign Up</button>
     </form>
