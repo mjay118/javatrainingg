@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Amita' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Spectral' rel='stylesheet'>
+    <title>Assg. 3 (Media Elements)</title>
+    <style>
+        body {
+            background-color: #e90c3cdc;
+        }
+
+        h1 {
+            background-color: rgba(12, 1, 1, 0.219);
+            text-align: center;
+            color: white;
+            padding: 1%;
+            margin-left: -10px;
+            margin-right: -10px;
+            font-family: 'Spectral';
+        }
+
+        h3 {
+            text-align: center;
+            color: white;
+            font-family: 'Amita';
+        }
+
+        div {
+            display: inline-block;
+            padding: 3%;
+            margin-left: 100px;
+        }
+
+        img {
+            width: 130px;
+            height: 130px;
+        }
+
+        .songs {
+            border: 2px solid brown;
+            background-color: rgba(12, 1, 1, 0.219);
+
+
+            width: 70%;
+            margin-left: 165px;
+
+        }
+
+        h4 {
+            text-align: center;
+        }
+
+        button {
+            text-align: center;
+        }
+
+        #play {
+            background-color: green;
+
+            width: 60px;
+
+            color: white;
+        }
+
+        #pause {
+            background-color: orangered;
+
+            width: 60px;
+
+            color: white;
+        }
+
+        .video {
+            border: 2px solid brown;
+            background-color: rgba(12, 1, 1, 0.219);
+            width: 70%;
+            margin-left: 165px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>MEDIA ELEMENTS</h1><br><br>
+    <h3><em>Audio</em></h3>
+    <div class="songs">
+        <div>
+            <audio id="baaghi">
+                <source
+                    src="https://naasongs.vip/AllSongs/Hindi%20Songs/Baaghi%203%20%282020%29/01%20-%20Dus%20Bahane%202.0%20-%20Naasongs.one.mp3"
+                    type="audio/mpeg" />
+            </audio>
+            <img src="Baaghi-3.jpg" />
+            <h4>Baaghi 3</h4>
+            <button id="play" onclick="document.getElementById('baaghi').play();">Play</button>
+            <button id="pause" onclick="document.getElementById('baaghi').pause();">Pause </button>
+        </div>
+        <div>
+            <audio id="angrezi">
+                <source
+                    src="https://naasongs.vip/AllSongs/Hindi%20Songs/Angrezi%20Medium%20%282020%29/01%20-%20Ek%20Zindagi%20-%20Naasongs.one.mp3"
+                    type="audio/mpeg" />
+
+
+            </audio>
+            <img src="Angrezi-medium.jpg" />
+            <h4>Angrezi Medium</h4>
+            <button id="play" onclick="document.getElementById('angrezi').play();">Play</button>
+            <button id="pause" onclick="document.getElementById('angrezi').pause();">Pause </button>
+        </div>
+        <div>
+            <audio id="kesari">
+                <source
+                    src="https://naasongs.vip/AllSongs/Hindi%20Songs/kesari/01%20-%20Sanu%20Kehndi%20-%20Naasongs.one.mp3"
+                    type="audio/mpeg" />
+            </audio>
+            <img src="Kesari.jpg" />
+            <h4>Kesari</h4>
+            <button id="play" onclick="document.getElementById('kesari').play();">Play</button>
+            <button id="pause" onclick="document.getElementById('kesari').pause();">Pause </button>
+        </div>
+    </div>
+    <br><br><br><br><br><br>
+    <h3><em>Video</em></h3>
+
+    <div class="video">
+        <div style="margin-left: 14%;">
+            <video width="220" height="240" controls loop>
+                <source src="ocean.mp4" type="video/mp4">
+            </video>
+            <h4>Nature </h4>
+        </div>
+        <div>
+            <video width="220" height="240" controls loop>
+                <source src="v2.mp4" type="video/mp4">
+            </video>
+            <h4>Animation</h4>
+        </div>
+    </div>
+</body>
+
+</html>
