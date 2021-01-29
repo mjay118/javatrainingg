@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        h1 {
+            color: brown;
+            font-weight: bolder;
+            font-style: italic;
+            text-align: center;
+        }
+
+        div {
+            text-align: center;
+            border: 2px solid blue;
+            padding-top: 4%;
+            padding-bottom: 4%;
+            margin-left: 19%;
+            margin-right: 19%;
+            background-color: lightcoral;
+        }
+
+        select {
+            background-color: whitesmoke;
+            padding: 1%;
+        }
+
+        option {
+            color: blue;
+            font-weight: bolder;
+        }
+
+        label {
+            font-style: italic;
+            font-size: large;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bolder;
+        }
+
+        button {
+            background-color: blue;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            padding-left: 3%;
+            padding-right: 3%;
+            border-radius: 10%;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>SelectBox</h1><br><br>
+    <div>
+        <label>Country</label><br><br>
+        <select name="country">
+            <label>State</label>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="China">China</option>
+            <option value="Japan">Japan</option>
+        </select><br><br>
+        <label>State</label><br><br>
+        <select name="state">
+            <optgroup label="India">
+                <option value="Bihar">Bihar</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Orissa">Orissa</option>
+                <option value="Delhi">Delhi</option>
+            </optgroup>
+            <optgroup label="USA">
+                <option value="California">California</option>
+                <option value="Washington">Washington</option>
+            </optgroup>
+        </select>
+        <br><br>
+        <label>City</label><br><br>
+        <select name="city">
+            <optgroup label="Bihar">
+                <option value="Madhubani">Madhubani</option>
+                <option value="Darbhanga">Telangana</option>
+                <option value="Patna">Orissa</option>
+                <option value="Chapra">Delhi</option>
+            </optgroup>
+            <optgroup label="Orissa">
+                <option value="Bhubaneswar">Bhubaneswar</option>
+                <option value="Cuttack">Cuttack</option>
+                <option value="Berhampur">Berhampur</option>
+            </optgroup>
+        </select>
+        <br><br><br><br>
+        <button>Submit</button>
+    </div>
+</body>
+</html>

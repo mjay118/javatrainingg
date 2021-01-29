@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        button {
+            background-color: blue;
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+            color: brown;
+            font-weight: bolder;
+            font-style: italic;
+        }
+
+        div {
+            text-align: center;
+            border: 2px solid blue;
+            padding-top: 4%;
+            padding-bottom: 4%;
+            margin-left: 19%;
+            margin-right: 19%;
+            background-color: lightcoral;
+        }
+
+        label {
+            font-style: italic;
+            font-size: large;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Automatic Suggestion Dropdown Box</h1><br><br>
+    <div>
+        <label>Programming Language:</label><br><br>
+        <input list="language" name="language">
+        <datalist id="language">
+            <option value="C">
+            <option value="C++">
+            <option value="Java">
+            <option value="Python">
+            <option value="JavaScript">
+            <option value="Ruby">
+            <option value="Pearl"></option>
+        </datalist><br><br>
+        <button>Sbumit</button>
+    </div>
+</body>
+
+</html>
