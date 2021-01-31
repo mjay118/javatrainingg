@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .heading{
+            text-align: center;
+            font-style: italic;
+            font-weight: bolder;
+            color: orangered;
+        
+        }
+
+        .div1 {
+            background-color: cyan;
+            padding: 3%;
+            border: 2px solid saddlebrown;
+            width: 600px;
+            height: 200px;
+            text-align: center;
+
+        }
+        .div2 {
+            background-color: orangered;
+            padding: 3%;
+            border: 2px solid saddlebrown;
+            width: 600px;
+            height: 200px;
+            text-align: center;
+
+        }
+
+        button {
+            background-color: red;
+            padding: 1%;
+            text-align: center;
+        }
+
+        button {
+            color: white;
+        }
+
+        @media screen and (max-width: 400px) {
+            .div1 {
+                background-color: lightgreen;
+                width: 100%;
+            }
+            .div2 {
+                background-color: skyblue;
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 200px){
+            .div1 {
+                background-color: blue;
+                width: 100%;
+            }
+            .div2 {
+                background-color: palevioletred;
+                width: 100%;
+            }
+        } 
+
+        @media screen and (min-width: 500px){
+            .div1 {
+                background-color: orange;
+                width: 100%;
+            }
+            .div2 {
+                background-color: orchid;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="heading">MEDIA QUERIES</h1>
+    <div class="div1">
+        <h1>Subscribe to our email list</h1>
+        <button>Subscribe</button>
+    </div><br><br>
+    <div class="div2">
+        <h1>Subscribe to our email list</h1>
+        <button>Subscribe</button>
+    </div>
+</body>
+
+</html>
