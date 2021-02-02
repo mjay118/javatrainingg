@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: teal;
+        }
+
+        .x {
+            display: flex;
+            flex-direction: row;
+            width: 1362px;
+            border: 2px solid white;
+            margin-left: -0.6%;
+            background-color: black;
+            color: white;
+            margin-top: -6px;
+
+        }
+
+        .x div {
+            flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: 150px;
+            padding-left: 0.6%;
+        }
+
+        .x div:nth-of-type(2) {
+            flex-basis: 900px;
+        }
+
+        .x div:nth-of-type(3) {
+            flex-basis: 150px;
+        }
+        h1{
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="x">
+        <div>
+            <h3>Home</h3>
+        </div>
+        <div>
+            <h3>About</h3>
+        </div>
+        <div>
+            <h3>LogIn</h3>
+        </div>
+        <div>
+            <h3>SignUp</h3>
+        </div>
+    </div><br><br><br><br><br><br><br>
+    <h1>This web page is designed using Flex Properties of CSS.</h1>
+    <h1>Elements are aligned using the CSS :nth-of-type() Selector.</h1>
+    <h1>Flex Shrink and Grow properties are used to avoid the space <br><span> caused by next nth element.</span></h1>
+    <h1>Flex Basis is used to align elements right and left by setting pixel. </h1>
+
+
+</body>
+
+</html>
