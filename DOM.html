@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <style>
+        h1{
+            text-align: center;
+            color:brown
+        }
+        h2{
+            text-align: center;
+            color:blue
+        }
+        div{
+            text-align: center;
+    
+        }
+        #btn{
+            background-color:brown;
+            color: white;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <h1>DOM MANIPULATION WITH JAVASCRIPT</h1>
+    <h1 id="id1"></h1>
+    <h2 id="id2"></h1>
+        <h2 id="id3"></h1>
+            <div>
+        <input type="text" id="name" placeholder="Enter Name"/>
+        <button id="btn" onclick="getName()">Submit</button>
+    </div>
+
+
+    <script>
+        document.getElementById("id1").innerHTML = "Addition of 5+5 is " + (5 + 5);
+        document.getElementById("id2").innerHTML=Date();
+        function getName(){
+            var name=document.getElementById("name").value;
+            document.getElementById("id3").innerHTML="Hi "+name+" !!";
+        }
+    </script>
+
+</body>
+
+</html>
